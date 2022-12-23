@@ -1,0 +1,29 @@
+{
+  "name": "tabby",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/robbiesymonds/Tabby",
+  "author": "Robbie Symonds <hello@robbiesymonds.me>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "rm -rf build/ && yarn build:vite && tsc && yarn build:assets",
+    "build:vite": "vite build --outDir build",
+    "build:assets": "cp manifest.json build"
+  },
+  "dependencies": {
+    "@arrow-js/core": "^1.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.206",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none",
+    "semi": false
+  }
+}

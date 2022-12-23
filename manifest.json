@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Tabby",
+  "version": "1.0.0",
+  "description": "Utility-focused new tab for Google Chrome.",
+  "permissions": ["tabs", "storage", "cookies", "activeTab", "scripting"],
+  "host_permissions": ["*://*/*"],
+  "icons": {
+    "16": "icons/16.png",
+    "38": "icons/38.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
